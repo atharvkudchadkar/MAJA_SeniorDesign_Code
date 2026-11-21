@@ -27,3 +27,14 @@ __pycache__/
 *.pyc
 
 API/key.env
+
+# Any env/key file in any folder (protects TTS_and_STT/key.env)
+*.env
+
+# Piper voice models (large; download them per the README)
+*.onnx
+*.onnx.json
+
+# Test and generated audio
+*.wav
+*.mp3

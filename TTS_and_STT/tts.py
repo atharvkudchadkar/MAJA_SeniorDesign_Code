@@ -1,4 +1,4 @@
-# This file turns translated text into speech audio for the ESP32 to play
+# This file turns translated text into speech audio for the ESP32
 
 from piper import PiperVoice
 import wave
@@ -44,30 +44,3 @@ if __name__ == "__main__":
         a.writeframes(audio)
 
     print("Saved tts_test.wav file")
-
-
-
-
-
-# from gtts import gTTS
-# import pygame
-# import time
-
-# def TTS(text, lang):
-#     text = text.strip()
-#     if text == "":
-#         print("No text provided")
-#         return
-#     speech = gTTS(text=text, lang=lang)
-#     speech.save("testTTS.mp3")
-#     pygame.mixer.init()
-#     pygame.mixer.music.load("testTTS.mp3")
-#     pygame.mixer.music.play()
-#     while pygame.mixer.music.get_busy():
-#         time.sleep(0.01)
-#     pygame.mixer.music.unload()
-
-# if __name__ == "__main__":
-#     #TTS("", "es")
-#     TTS(" hola, cómo estás ", "es")
-#     #TTS("bien et toi", "fr")

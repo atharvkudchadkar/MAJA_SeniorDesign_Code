@@ -42,13 +42,7 @@ def translate(text, target, source=None):
     return response.json()["data"]["translations"][0]["translatedText"]
 
 
-
-
-#response = requests.post("https://translation.googleapis.com/language/translate/v2", params={"key": api_key}, json=query, timeout=10)
-
 if __name__ == "__main__":
 
     print(translate("Hola, ¿cómo estás?", "fr", "es"))
 
-#print(response.status_code)
-#print(response.json()["data"]["translations"][0]["translatedText"])
